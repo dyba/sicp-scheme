@@ -93,13 +93,3 @@
   (cond ((equal? process 'iterative) (f* n))
 	((equal? process 'recursive) (f n))
 	(else (display "You must provide the argument 'iterative or 'recursive"))))
-
-(define (exercise-1-12 row column)
-  "Returns the element in the Pascal triangle."
-  (define (pascal-triangle r c)
-    (cond ((or (= c 1)
-	       (= c r))
-	   1)
-	  (else (+ (pascal-triangle (-1+ r) (-1+ c))
-		   (pascal-triangle (-1+ r) c)))))
-  (pascal-triangle row column))
