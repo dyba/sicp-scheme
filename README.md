@@ -26,5 +26,5 @@ chicken-install test
 ## Run Tests
 
 ```
-csi -i chapter1/exercise16-test.scm
+csi -i chapter_1/exercise12.scm chapter_1/exercise12-test.scm
 ```
