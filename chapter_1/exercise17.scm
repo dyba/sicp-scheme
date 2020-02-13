@@ -13,6 +13,7 @@
 (define (mult a b)
   "mult uses an iterative approach to multiplication"
   (define (fast-mult-iter x y carry)
+    ;; (= y 1)
     (cond ((< y 2) (+ carry x))
           ((even? y) (fast-mult-iter (double x)
                                      (halve y)

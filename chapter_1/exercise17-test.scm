@@ -1,5 +1,3 @@
-(load-relative "exercise17.scm")
-
 (require-extension test)
 
 (test-group "double"
